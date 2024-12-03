@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios dia 31 JS</title>
+    <script type="text/javascript" src="ejercicios.js" defer></script>
+    <link rel="stylesheet" href="ejercicios.css">
+</head>
+
+<body>
+    <div class="ejercicio1">
+        <header>
+            <h1>Eventos en JavaScript</h1>
+            <p>Una lista de eventos comunes y útiles en JavaScript</p>
+        </header>
+
+        <div class="container">
+            <h2>Lista de eventos</h2>
+
+            <div class="event">
+                <div class="event-title">click</div>
+                <div class="description">
+                    Se activa cuando un usuario hace clic en un elemento de la página.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">mouseover</div>
+                <div class="description">
+                    Se activa cuando el puntero del mouse pasa sobre un elemento.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">mouseout</div>
+                <div class="description">
+                    Se activa cuando el puntero del mouse deja de estar sobre un elemento.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">keydown</div>
+                <div class="description">
+                    Se activa cuando el usuario presiona una tecla en el teclado.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">keyup</div>
+                <div class="description">
+                    Se activa cuando el usuario suelta una tecla en el teclado.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">keypress</div>
+                <div class="description">
+                    Se activa cuando el usuario presiona una tecla, pero solo para teclas con
+                    caracteres imprimibles.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">focus</div>
+                <div class="description">
+                    Se activa cuando un elemento recibe el foco, como un campo de entrada o un área
+                    de
+                    texto.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">blur</div>
+                <div class="description">
+                    Se activa cuando un elemento pierde el foco, como un campo de entrada.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">submit</div>
+                <div class="description">
+                    Se activa cuando se envía un formulario (por ejemplo, al hacer clic en un botón de enviar).
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">change</div>
+                <div class="description">
+                    Se activa cuando el valor de un elemento de formulario cambia, como un campo de texto o un menú
+                    desplegable.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">input</div>
+                <div class="description">
+                    Se activa cada vez que el usuario introduce texto en un campo de entrada o realiza un cambio en un
+                    elemento editable.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">load</div>
+                <div class="description">
+                    Se activa cuando un recurso, como una imagen o un archivo, se ha cargado completamente.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">resize</div>
+                <div class="description">
+                    Se activa cuando la ventana del navegador o un elemento cambia de tamaño.</div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">scroll</div>
+                <div class="description">
+                    Se activa cuando el usuario desplaza la página o un contenedor de desplazamiento.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">drag</div>
+                <div class="description">
+                    Se activa cuando un elemento es arrastrado dentro de la ventana del navegador.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">drop</div>
+                <div class="description">
+                    Se activa cuando un elemento arrastrado se suelta sobre un área de destino.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">touchstart</div>
+                <div class="description">
+                    Se activa cuando un usuario toca la pantalla de un dispositivo móvil o táctil.
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-title">touchend</div>
+                <div class="description">
+                    Se activa cuando un usuario levanta el dedo de la pantalla de un dispositivos móvil o táctil.</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Ejercicio 2 -->
+    <div class="ejercicio2">
+        <h1>Haz clic en un botón para cambiar su color</h1>
+        <div class="button-container">
+            <button id="button1" onclick="cambiarColor('button1')">Botón 1</button>
+            <button id="button2" onclick="cambiarColor('button2')">Botón 2</button>
+            <button id="button3" onclick="cambiarColor('button3')">Botón 3</button>
+            <button id="button4" onclick="cambiarColor('button4')">Botón 4</button>
+            <button id="button5" onclick="cambiarColor('button5')">Botón 5</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Ejercicio 3 -->
+    <div class="ejercicio3">
+        <h1>Haz clic para cambiar el color de los divs</h1>
+        <div class="container">
+            <div class="color-box" id="div1"></div>
+            <div class="color-box" id="div2"></div>
+            <div class="color-box" id="div3"></div>
+            <div class="color-box" id="div4"></div>
+            <div class="color-box" id="div5"></div>
+        </div>
+
+        <button onclick="cambiarColores()">Cambiar Colores</button>
+    </div>
+    <hr>
+
+    <!-- Ejercicio 4 -->
+    <div class="ejercicio4">
+        <h1>Movimiento del Ratón</h1>
+        <p>Moviendo el ratón sobre esta página, se verá las coordenadas en la consola.</p>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <!-- Ejercicio 5 -->
+    <div class="ejercicio5">
+        <h1>Movimiento del Ratón sobre el Div</h1>
+        <p>Cuando el ratón entra o sale del div, cambiará de color aleatoriamente.</p>
+
+        <div id="miDiv"></div>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <!-- Ejercicio 6 -->
+    <div class="ejercicio6">
+        <h1>Página Web con 3 eventos</h1>
+        <button id="colorButton">Cambiar color de fondo</button>
+        <div class="message" id="keyMessage"></div>
+        <div class="resize-message" id="resizeMessage"></div>
+    </div>
+</body>
+
+</html>
