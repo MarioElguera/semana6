@@ -1,0 +1,112 @@
+.ejercicio1 {
+    text-align: center;
+
+    #miDiv {
+        width: 200px;
+        height: 200px;
+        background-color: #3498db;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        margin: 50px auto;
+        border-radius: 10px;
+        transition: background-color 2s;
+    }
+
+    .animar {
+        animation: moverDiv 2s;
+    }
+
+}
+
+@keyframes moverDiv {
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+
+    50% {
+        transform: translateX(200px);
+        background-color: red;
+    }
+
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
+
+.ejercicio2 {
+    p {
+        font-size: 20px;
+        color: black;
+    }
+
+    .highlight {
+        color: red;
+    }
+}
+
+.ejercicio3 {
+    #miDiv3 {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 20px;
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .grande {
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+.ejercicio4 {
+
+    /* Estilo inicial para el párrafo */
+    p {
+        font-size: 20px;
+        color: black;
+        transition: color 0.5s ease;
+        /* Transición suave al cambiar el color */
+    }
+
+    .highlight {
+        color: red;
+        /* Color inicial cuando tiene la clase */
+    }
+
+    .animar {
+        animation: moverDiv 2s;
+    }
+}
+
+.ejercicio5y6 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    #container {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        color: white;
+        font-weight: bold;
+        float: left;
+    }
+
+    div:hover {
+        /* opacity: 0.8; */
+    }
+
+}
