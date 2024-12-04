@@ -91,9 +91,8 @@
     #container {
         margin-top: 20px;
         width: 100%;
-        display: flex;
+        display: block;
         flex-wrap: wrap;
-        justify-content: flex-start;
     }
 
     div {
@@ -104,9 +103,4 @@
         font-weight: bold;
         float: left;
     }
-
-    div:hover {
-        /* opacity: 0.8; */
-    }
-
 }
